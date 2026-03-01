@@ -13,15 +13,11 @@ tags: [geopolitics, iran, ukraine, india, nuclear, china, middle-east]
   <img src="{{ '/assets/posts/geopolitical-world-report-march2026/01-hero.png' | prepend: site.baseurl }}" width="100%" alt="World in Crisis, March 2026" />
 </p>
 
-## A plain-English briefing on every major crisis happening right now. March 1, 2026.
-
----
-
 *You don't need to follow the news every day to read this. Everything is explained from the ground up. Share it with anyone who wants to understand what's actually happening in the world.*
 
 ---
 
-There is a clock. Scientists called the Bulletin of Atomic Scientists move it every year. They call it the Doomsday Clock, and they set it based on how close humanity is to destroying itself: through nuclear weapons, climate collapse, or catastrophic technology.
+There is a clock. The Bulletin of Atomic Scientists moves it every year. They call it the Doomsday Clock, and they set it based on how close humanity is to destroying itself: through nuclear weapons, climate collapse, or catastrophic technology.
 
 As of March 2026, that clock sits at **89 seconds to midnight**.
 
