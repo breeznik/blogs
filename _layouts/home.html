@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+<div class="home">
+  {{ content }}
+
+  {% if site.posts.size > 0 %}
+    <ul class="post-list">
+      {% for post in site.posts %}
+        <li>
+          <span class="post-meta">{{ post.date | date: "%B %Y" }}</span>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+            {{ post.title | escape }}
+            <span class="arrow">&rarr;</span>
+          </a>
+          {% if post.description %}
+            <p class="post-excerpt">{{ post.description }}</p>
+          {% elsif site.show_excerpts %}
+            <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+</div>

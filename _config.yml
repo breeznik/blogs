@@ -1,0 +1,33 @@
+title: "Breeznik"
+description: "Things I read, watched, or thought about — written down."
+author: "Nikhil Rao"
+
+url: "https://breeznik.github.io"
+baseurl: "/blogs"
+
+theme: minima
+
+show_excerpts: true
+
+# Navigation pages (appear in header)
+header_pages:
+  - about.md
+  - search.md
+  - tags.md
+
+# Google Analytics 4 — replace with your Measurement ID from analytics.google.com
+google_analytics: "G-XXXXXXXXXX"
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+markdown: kramdown
+highlighter: rouge
+
+exclude:
+  - PUSH-TO-GITHUB.md
+  - MEDIUM-UPLOAD-GUIDE.md
+  - image-prompts-geopolitical-blog.md
+  - "*.sh"

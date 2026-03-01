@@ -1,0 +1,178 @@
+<!-- Reading UI — progress bar + scroll-to-top button -->
+<!-- Visual styling of these elements is intentionally minimal — style via main.scss -->
+
+<div id="reading-progress" aria-hidden="true"></div>
+
+<button id="scroll-top" aria-label="Back to top" title="Back to top">↑</button>
+
+<style>
+  /* ── BEHAVIORAL CSS — position/transform only, aesthetics left to main.scss ── */
+
+  /* Smart nav — fixed, slides in/out */
+  .site-header {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 200;
+    transition: transform 0.28s ease, box-shadow 0.28s ease;
+    will-change: transform;
+  }
+
+  .site-header.nav-hidden {
+    transform: translateY(-110%);
+  }
+
+  /* Offset page content so fixed header doesn't overlap */
+  .page-content {
+    padding-top: 80px !important;
+  }
+
+  /* Reading progress bar — thin line at very top */
+  #reading-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 2px;
+    width: 0%;
+    z-index: 300;
+    transition: width 0.1s linear;
+    pointer-events: none;
+    background: var(--accent, #C9922A);
+  }
+
+  /* Scroll to top button */
+  #scroll-top {
+    position: fixed;
+    bottom: 32px;
+    right: 32px;
+    z-index: 200;
+    width: 40px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    opacity: 0;
+    transform: translateY(12px);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    pointer-events: none;
+    /* Minimal default styling — override in main.scss */
+    background: var(--accent, #C9922A);
+    color: var(--bg-base, #F5F2ED);
+    border-radius: 50%;
+    font-size: 1rem;
+    line-height: 1;
+    font-family: inherit;
+  }
+
+  #scroll-top.visible {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+
+  @media (max-width: 768px) {
+    .page-content {
+      padding-top: 64px !important;
+    }
+
+    #scroll-top {
+      bottom: 20px;
+      right: 20px;
+      width: 36px;
+      height: 36px;
+    }
+  }
+</style>
+
+<script>
+  (function () {
+    'use strict';
+
+    /* ── SMART NAV ──────────────────────────────────────── */
+    const header = document.querySelector('.site-header');
+    let lastY = 0;
+    let ticking = false;
+
+    function handleNavScroll() {
+      const y = window.pageYOffset;
+
+      // Toggle background when scrolled down
+      if (y > 40) {
+        header.classList.add('scrolled-header');
+      } else {
+        header.classList.remove('scrolled-header');
+      }
+
+      // Toggle nav visibility
+      if (y <= 10) {
+        header.classList.remove('nav-hidden');
+      } else if (y > lastY + 4) {
+        header.classList.add('nav-hidden');    // scrolling down
+      } else if (y < lastY - 4) {
+        header.classList.remove('nav-hidden'); // scrolling up
+      }
+      lastY = y;
+      ticking = false;
+    }
+
+    window.addEventListener('scroll', function () {
+      if (!ticking) {
+        requestAnimationFrame(handleNavScroll);
+        ticking = true;
+      }
+    }, { passive: true });
+
+
+    /* ── READING PROGRESS BAR ───────────────────────────── */
+    const bar = document.getElementById('reading-progress');
+
+    // Only show progress on post pages
+    const postContent = document.querySelector('.post-content');
+
+    if (postContent && bar) {
+      window.addEventListener('scroll', function () {
+        const docH = document.documentElement.scrollHeight - window.innerHeight;
+        const pct = docH > 0 ? (window.pageYOffset / docH) * 100 : 0;
+        bar.style.width = Math.min(pct, 100) + '%';
+      }, { passive: true });
+    }
+
+
+    /* ── SCROLL TO TOP ──────────────────────────────────── */
+    const topBtn = document.getElementById('scroll-top');
+
+    window.addEventListener('scroll', function () {
+      if (window.pageYOffset > 400) {
+        topBtn.classList.add('visible');
+      } else {
+        topBtn.classList.remove('visible');
+      }
+    }, { passive: true });
+
+    topBtn.addEventListener('click', function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+
+    /* ── TOC SCROLL SPY ─────────────────────────────────── */
+    // Highlights the current section's TOC link as the user reads
+    const toc = document.querySelector('.toc');
+    if (toc) {
+      const tocLinks = toc.querySelectorAll('a[href^="#"]');
+      const headings = Array.from(tocLinks).map(a => document.querySelector(a.getAttribute('href'))).filter(Boolean);
+
+      const observer = new IntersectionObserver(function (entries) {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            tocLinks.forEach(a => a.classList.remove('toc-active'));
+            const active = toc.querySelector('a[href="#' + entry.target.id + '"]');
+            if (active) active.classList.add('toc-active');
+          }
+        });
+      }, { rootMargin: '-15% 0px -80% 0px' });
+
+      headings.forEach(h => observer.observe(h));
+    }
+
+  }());
+</script>
