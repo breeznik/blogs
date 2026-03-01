@@ -16,7 +16,7 @@ header_pages:
   - tags.md
 
 # Google Analytics 4 — replace with your Measurement ID from analytics.google.com
-google_analytics: "G-XXXXXXXXXX"
+google_analytics: "G-W3QBMPDZDW"
 
 plugins:
   - jekyll-feed
