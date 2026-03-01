@@ -35,7 +35,7 @@ This is not a metaphor. This is where we are.
 
 ---
 
-<nav class="toc">
+<nav class="toc" markdown="1">
 <span class="toc-label">Contents · 20 min read</span>
 
 1. [The World Order Is Cracking](#part-1)
