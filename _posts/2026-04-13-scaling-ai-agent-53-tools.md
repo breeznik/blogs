@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How we gave one AI agent 53 tools without making it dumber"
+title: "Scaling an AI agent to 53 tools without making it dumber"
 description: "A story about attention, and the three architectures it took to figure out that scaling AI agents isn't about picking tools, it's about managing what the model pays attention to."
 date: 2026-04-13
 permalink: /scaling-ai-agent-53-tools/

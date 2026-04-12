@@ -41,8 +41,8 @@
 
   <!-- LEFT COLUMN · Headline -->
   <g transform="translate(60, 225)">
-    <text x="0" y="0"   class="serif" font-size="58" fill="#18160F">How we gave one AI</text>
-    <text x="0" y="72"  class="serif" font-size="58" fill="#18160F">53 tools without</text>
+    <text x="0" y="0"   class="serif" font-size="58" fill="#18160F">Scaling an AI agent</text>
+    <text x="0" y="72"  class="serif" font-size="58" fill="#18160F">to 53 tools without</text>
     <text x="0" y="144" class="serif" font-size="58" fill="#18160F">making it dumber.</text>
     <text x="0" y="196" class="serif-i" font-size="24" fill="#88857C">A story about attention.</text>
     <text x="0" y="228" class="sans" font-size="13" fill="#88857C" letter-spacing="2.2">BY  NIKHIL  RAO</text>
