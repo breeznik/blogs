@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&amp;family=DM+Sans:wght@400;500&amp;display=swap');
+      .serif   { font-family: 'DM Serif Display', Georgia, serif; }
+      .serif-i { font-family: 'DM Serif Display', Georgia, serif; font-style: italic; }
+      .sans    { font-family: 'DM Sans', system-ui, sans-serif; }
+    </style>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#B8882A" stop-opacity="0.22"/>
+      <stop offset="55%"  stop-color="#B8882A" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#B8882A" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="vignette" cx="50%" cy="50%" r="75%">
+      <stop offset="55%"  stop-color="rgba(24,22,15,0)"/>
+      <stop offset="100%" stop-color="rgba(24,22,15,0.08)"/>
+    </radialGradient>
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.06 0"/>
+    </filter>
+  </defs>
+
+  <!-- Cream background + subtle vignette -->
+  <rect width="1200" height="630" fill="#F7F5F0"/>
+  <rect width="1200" height="630" fill="url(#vignette)"/>
+
+  <!-- Editorial frame -->
+  <rect x="30" y="30" width="1140" height="570" fill="none" stroke="#18160F" stroke-width="1"/>
+
+  <!-- Vertical divider between headline and schematic -->
+  <line x1="620" y1="92" x2="620" y2="538" stroke="#88857C" stroke-width="1" opacity="0.45"/>
+
+  <!-- Masthead line -->
+  <text x="60"   y="80"  class="sans" font-size="14" fill="#88857C" letter-spacing="2.8">ENGINEERING NOTES</text>
+  <text x="1140" y="80"  class="sans" font-size="14" fill="#88857C" letter-spacing="2.8" text-anchor="end">APRIL  2026</text>
+
+  <!-- Footer meta -->
+  <text x="60"   y="580" class="sans" font-size="13" fill="#88857C" letter-spacing="1.6">breeznik.github.io/blogs</text>
+  <text x="1140" y="580" class="sans" font-size="13" fill="#88857C" letter-spacing="1.6" text-anchor="end">ai  ·  agents  ·  langgraph</text>
+
+  <!-- LEFT COLUMN · Headline -->
+  <g transform="translate(60, 225)">
+    <text x="0" y="0"   class="serif" font-size="58" fill="#18160F">How we gave one AI</text>
+    <text x="0" y="72"  class="serif" font-size="58" fill="#18160F">53 tools without</text>
+    <text x="0" y="144" class="serif" font-size="58" fill="#18160F">making it dumber.</text>
+    <text x="0" y="196" class="serif-i" font-size="24" fill="#88857C">A story about attention.</text>
+    <text x="0" y="228" class="sans" font-size="13" fill="#88857C" letter-spacing="2.2">BY  NIKHIL  RAO</text>
+  </g>
+
+  <!-- RIGHT COLUMN · Vertical attention funnel -->
+  <g transform="translate(880, 0)">
+    <!-- Gold glow behind the scoped grid -->
+    <ellipse cx="0" cy="432" rx="185" ry="115" fill="url(#glow)"/>
+
+    <text x="0" y="145" class="sans" font-size="13" fill="#88857C" letter-spacing="2.8" text-anchor="middle">THE REGISTRY  ·  53 TOOLS</text>
+
+    <g fill="#18160F">
+      <circle cx="-72" cy="180" r="3"/>
+      <circle cx="-54" cy="180" r="3"/>
+      <circle cx="-36" cy="180" r="3"/>
+      <circle cx="-18" cy="180" r="3"/>
+      <circle cx="0" cy="180" r="3"/>
+      <circle cx="18" cy="180" r="3"/>
+      <circle cx="36" cy="180" r="3"/>
+      <circle cx="54" cy="180" r="3"/>
+      <circle cx="72" cy="180" r="3"/>
+      <circle cx="-72" cy="198" r="3"/>
+      <circle cx="-54" cy="198" r="3"/>
+      <circle cx="-36" cy="198" r="3"/>
+      <circle cx="-18" cy="198" r="3"/>
+      <circle cx="0" cy="198" r="3"/>
+      <circle cx="18" cy="198" r="3"/>
+      <circle cx="36" cy="198" r="3"/>
+      <circle cx="54" cy="198" r="3"/>
+      <circle cx="72" cy="198" r="3"/>
+      <circle cx="-72" cy="216" r="3"/>
+      <circle cx="-54" cy="216" r="3"/>
+      <circle cx="-36" cy="216" r="3"/>
+      <circle cx="-18" cy="216" r="3"/>
+      <circle cx="0" cy="216" r="3"/>
+      <circle cx="18" cy="216" r="3"/>
+      <circle cx="36" cy="216" r="3"/>
+      <circle cx="54" cy="216" r="3"/>
+      <circle cx="72" cy="216" r="3"/>
+      <circle cx="-72" cy="234" r="3"/>
+      <circle cx="-54" cy="234" r="3"/>
+      <circle cx="-36" cy="234" r="3"/>
+      <circle cx="-18" cy="234" r="3"/>
+      <circle cx="0" cy="234" r="3"/>
+      <circle cx="18" cy="234" r="3"/>
+      <circle cx="36" cy="234" r="3"/>
+      <circle cx="54" cy="234" r="3"/>
+      <circle cx="72" cy="234" r="3"/>
+      <circle cx="-72" cy="252" r="3"/>
+      <circle cx="-54" cy="252" r="3"/>
+      <circle cx="-36" cy="252" r="3"/>
+      <circle cx="-18" cy="252" r="3"/>
+      <circle cx="0" cy="252" r="3"/>
+      <circle cx="18" cy="252" r="3"/>
+      <circle cx="36" cy="252" r="3"/>
+      <circle cx="54" cy="252" r="3"/>
+      <circle cx="72" cy="252" r="3"/>
+      <circle cx="-63.0" cy="270" r="3"/>
+      <circle cx="-45.0" cy="270" r="3"/>
+      <circle cx="-27.0" cy="270" r="3"/>
+      <circle cx="-9.0" cy="270" r="3"/>
+      <circle cx="9.0" cy="270" r="3"/>
+      <circle cx="27.0" cy="270" r="3"/>
+      <circle cx="45.0" cy="270" r="3"/>
+      <circle cx="63.0" cy="270" r="3"/>
+    </g>
+
+    <!-- Middleware arrow -->
+    <g stroke="#18160F" stroke-width="2" fill="none">
+      <line x1="0" y1="300" x2="0" y2="355"/>
+      <polyline points="-6,349 0,358 6,349"/>
+    </g>
+    <text x="16" y="322" class="sans"   font-size="12" fill="#88857C" letter-spacing="1.8">MIDDLEWARE</text>
+    <text x="16" y="338" class="serif-i" font-size="12" fill="#88857C">active_context</text>
+
+    <text x="0" y="378" class="sans" font-size="13" fill="#88857C" letter-spacing="2.8" text-anchor="middle">MODEL ATTENTION  ·  14</text>
+
+    <g fill="#B8882A">
+      <circle cx="-44" cy="400" r="5"/>
+      <circle cx="-22" cy="400" r="5"/>
+      <circle cx="0" cy="400" r="5"/>
+      <circle cx="22" cy="400" r="5"/>
+      <circle cx="44" cy="400" r="5"/>
+      <circle cx="-44" cy="422" r="5"/>
+      <circle cx="-22" cy="422" r="5"/>
+      <circle cx="0" cy="422" r="5"/>
+      <circle cx="22" cy="422" r="5"/>
+      <circle cx="44" cy="422" r="5"/>
+      <circle cx="-33.0" cy="444" r="5"/>
+      <circle cx="-11.0" cy="444" r="5"/>
+      <circle cx="11.0" cy="444" r="5"/>
+      <circle cx="33.0" cy="444" r="5"/>
+    </g>
+  </g>
+
+  <!-- Grain overlay -->
+  <rect width="1200" height="630" filter="url(#grain)" opacity="0.55" pointer-events="none"/>
+</svg>
