@@ -1,0 +1,21 @@
+<svg viewBox="0 0 620 180" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="fig3-title" style="width:100%;height:auto;display:block;">
+  <title id="fig3-title">A typical MCP agent spends 72 percent of its context window on tool definitions before any user work begins.</title>
+  <defs>
+    <pattern id="hatch" patternUnits="userSpaceOnUse" width="6" height="6" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="6" stroke="#18160F" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <text x="60" y="38" font-family="'DM Sans',sans-serif" font-size="10" fill="#88857C" letter-spacing="1.6">AGENT CONTEXT WINDOW</text>
+
+  <rect x="60" y="58" width="500" height="36" fill="none" stroke="#18160F" stroke-width="1.5"/>
+  <rect x="60" y="58" width="360" height="36" fill="url(#hatch)"/>
+  <rect x="420" y="58" width="140" height="36" fill="#B8882A" opacity="0.92"/>
+  <line x1="420" y1="58" x2="420" y2="94" stroke="#18160F" stroke-width="1.5"/>
+
+  <text x="240" y="117" font-family="'DM Sans',sans-serif" font-size="10" fill="#18160F" text-anchor="middle" letter-spacing="0.4">72% · tool definitions</text>
+  <text x="490" y="117" font-family="'DM Sans',sans-serif" font-size="10" fill="#18160F" text-anchor="middle" letter-spacing="0.4">28% · actual work</text>
+
+  <text x="310" y="150" font-family="'DM Sans',sans-serif" font-size="10" fill="#88857C" text-anchor="middle" font-style="italic">Almost three-quarters of the model's working memory, spent on descriptions</text>
+  <text x="310" y="164" font-family="'DM Sans',sans-serif" font-size="10" fill="#88857C" text-anchor="middle" font-style="italic">it never touches on this turn. (RAG-MCP, 2025)</text>
+</svg>

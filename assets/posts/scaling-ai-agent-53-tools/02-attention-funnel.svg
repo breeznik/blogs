@@ -1,0 +1,27 @@
+<svg viewBox="0 0 620 210" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="fig1-title" style="width:100%;height:auto;display:block;">
+  <title id="fig1-title">The attention funnel: 53 tools exist in the registry, but only ~14 reach the model per turn.</title>
+
+  <text x="60" y="38" font-family="'DM Sans',sans-serif" font-size="10" fill="#88857C" letter-spacing="1.6">THE REGISTRY · 53 TOOLS</text>
+  <g fill="#18160F" transform="translate(60,62)">
+    <circle cx="0"   cy="0"  r="3"/><circle cx="18"  cy="0"  r="3"/><circle cx="36"  cy="0"  r="3"/><circle cx="54"  cy="0"  r="3"/><circle cx="72"  cy="0"  r="3"/><circle cx="90"  cy="0"  r="3"/><circle cx="108" cy="0"  r="3"/><circle cx="126" cy="0"  r="3"/><circle cx="144" cy="0"  r="3"/>
+    <circle cx="0"   cy="18" r="3"/><circle cx="18"  cy="18" r="3"/><circle cx="36"  cy="18" r="3"/><circle cx="54"  cy="18" r="3"/><circle cx="72"  cy="18" r="3"/><circle cx="90"  cy="18" r="3"/><circle cx="108" cy="18" r="3"/><circle cx="126" cy="18" r="3"/><circle cx="144" cy="18" r="3"/>
+    <circle cx="0"   cy="36" r="3"/><circle cx="18"  cy="36" r="3"/><circle cx="36"  cy="36" r="3"/><circle cx="54"  cy="36" r="3"/><circle cx="72"  cy="36" r="3"/><circle cx="90"  cy="36" r="3"/><circle cx="108" cy="36" r="3"/><circle cx="126" cy="36" r="3"/><circle cx="144" cy="36" r="3"/>
+    <circle cx="0"   cy="54" r="3"/><circle cx="18"  cy="54" r="3"/><circle cx="36"  cy="54" r="3"/><circle cx="54"  cy="54" r="3"/><circle cx="72"  cy="54" r="3"/><circle cx="90"  cy="54" r="3"/><circle cx="108" cy="54" r="3"/><circle cx="126" cy="54" r="3"/><circle cx="144" cy="54" r="3"/>
+    <circle cx="0"   cy="72" r="3"/><circle cx="18"  cy="72" r="3"/><circle cx="36"  cy="72" r="3"/><circle cx="54"  cy="72" r="3"/><circle cx="72"  cy="72" r="3"/><circle cx="90"  cy="72" r="3"/><circle cx="108" cy="72" r="3"/><circle cx="126" cy="72" r="3"/><circle cx="144" cy="72" r="3"/>
+    <circle cx="0"   cy="90" r="3"/><circle cx="18"  cy="90" r="3"/><circle cx="36"  cy="90" r="3"/><circle cx="54"  cy="90" r="3"/><circle cx="72"  cy="90" r="3"/><circle cx="90"  cy="90" r="3"/><circle cx="108" cy="90" r="3"/><circle cx="126" cy="90" r="3"/>
+  </g>
+
+  <g stroke="#18160F" stroke-width="1.5" fill="none">
+    <line x1="240" y1="107" x2="340" y2="107"/>
+    <polyline points="332,102 340,107 332,112"/>
+  </g>
+  <text x="290" y="96"  font-family="'DM Sans',sans-serif" font-size="10" fill="#88857C" text-anchor="middle" letter-spacing="1.4">MIDDLEWARE</text>
+  <text x="290" y="126" font-family="'DM Sans',sans-serif" font-size="9"  fill="#88857C" text-anchor="middle" font-style="italic">active_context filter</text>
+
+  <text x="380" y="64" font-family="'DM Sans',sans-serif" font-size="10" fill="#88857C" letter-spacing="1.6">MODEL ATTENTION · 14</text>
+  <g fill="#B8882A" transform="translate(380,86)">
+    <circle cx="0" cy="0"  r="4"/><circle cx="22" cy="0"  r="4"/><circle cx="44" cy="0"  r="4"/><circle cx="66" cy="0"  r="4"/><circle cx="88" cy="0"  r="4"/>
+    <circle cx="0" cy="22" r="4"/><circle cx="22" cy="22" r="4"/><circle cx="44" cy="22" r="4"/><circle cx="66" cy="22" r="4"/><circle cx="88" cy="22" r="4"/>
+    <circle cx="0" cy="44" r="4"/><circle cx="22" cy="44" r="4"/><circle cx="44" cy="44" r="4"/><circle cx="66" cy="44" r="4"/>
+  </g>
+</svg>
